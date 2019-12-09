@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20191206 14:16:21.317" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\omkar\PycharmProjects\Sikuli\auto\auto.robot" id="s1" name="Auto">
+<test id="s1-t1" name="First">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>notepad.exe</arg>
+</arguments>
+<msg timestamp="20191206 14:16:21.916" level="INFO">AutoItLibrary.Run(FileName='notepad.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" endtime="20191206 14:16:21.916" starttime="20191206 14:16:21.910"></status>
+</kw>
+<kw name="Win Wait Active" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<arguments>
+<arg>Untitled - Notepad</arg>
+</arguments>
+<msg timestamp="20191206 14:16:22.240" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Untitled - Notepad', WindowText='', TimeOut=60)</msg>
+<status status="PASS" endtime="20191206 14:16:22.240" starttime="20191206 14:16:21.916"></status>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<doc>method Send</doc>
+<arguments>
+<arg>Omkar</arg>
+</arguments>
+<status status="PASS" endtime="20191206 14:16:22.307" starttime="20191206 14:16:22.241"></status>
+</kw>
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>*Untitled - Notepad</arg>
+</arguments>
+<status status="PASS" endtime="20191206 14:16:22.559" starttime="20191206 14:16:22.308"></status>
+</kw>
+<kw name="Send" library="AutoItLibrary">
+<doc>method Send</doc>
+<arguments>
+<arg>${"Enter"}</arg>
+</arguments>
+<msg timestamp="20191206 14:16:22.561" level="FAIL">Variable '${"Enter"}' not found.</msg>
+<status status="FAIL" endtime="20191206 14:16:22.561" starttime="20191206 14:16:22.560"></status>
+</kw>
+<status status="FAIL" endtime="20191206 14:16:22.562" critical="yes" starttime="20191206 14:16:21.909">Variable '${"Enter"}' not found.</status>
+</test>
+<status status="FAIL" endtime="20191206 14:16:22.567" starttime="20191206 14:16:21.324"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Auto" pass="0">Auto</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20191206 14:16:21.904" level="ERROR">Error in file 'C:\Users\omkar\PycharmProjects\Sikuli\auto\auto.robot': Importing test library 'PyAutoIt' failed: ImportError: No module named PyAutoIt
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\WINDOWS\SYSTEM32\python27.zip
+  c:\python27\DLLs
+  c:\python27\lib
+  c:\python27\lib\plat-win
+  c:\python27\lib\lib-tk
+  c:\python27
+  c:\python27\lib\site-packages
+  c:\python27\lib\site-packages\win32
+  c:\python27\lib\site-packages\win32\lib
+  c:\python27\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
